@@ -23,7 +23,7 @@
 ollama show gemma3filenames1:latest --verbose | grep "length"
 ```
 
-Parameter  `PARAMETER num_ctx 1024` is expected to **always** overwrite any limits, and be taken on first.
+PARAMETER `num_ctx` 1024 in the Modelfile **overrides** the default context length exposed by `ollama show`.
 
 # Tokens Count Script
 
@@ -53,7 +53,7 @@ When OS runs out of memory, the laptop may crash and reboot.
 # Syntax to include file and check
 
 ```
-./images-001.jpeg
+./image-001.jpeg
 ```
 
 Expected output 
@@ -65,7 +65,7 @@ Expected output
 ```
 ollama server
 
-ollama pull # model to pul
+ollama pull # model to pull
 
 ollama create {modelname} -f {path-to-model-file}
 

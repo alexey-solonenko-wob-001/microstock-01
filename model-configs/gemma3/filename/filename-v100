@@ -43,7 +43,7 @@ Ingest a single image file from input, analyse it internally, and generate 10 su
   - Use wire-electrical instead of electrical-wire.
   - Use mouse-computer instead of computer-mouse. 
   - Use tire-car instead of car-tire.
-  - User lemon-yellow instead of yellow-lemon
+  - Use lemon-yellow instead of yellow-lemon
 
 3. If multiple similar objects dominate (e.g., two cats, many lemons):
    - Use the singular object name (cat, lemon) unless pluralization is visually unambiguous.
@@ -82,12 +82,12 @@ Each filename must differ by **at least two meaningful words**.
   - lemon-yellow-many-round_0001_v01
   - lemon-fresh-pile-texture_0001_v01
   - lemon-stock-bright-round_0001_v01
-  - city-brick-building-streets-skyline_0001_v01
+  - building-city-brick-streets-skyline_0001_v01
   - lemons-ripe-bright-fresh_0001_v01
 
 ---
 
-# Fallback Categories (only when no object object exists)
+# Fallback Categories (only when no object exists)
 
 If any clear foreground object exists, do NOT use fallback categories.
 
