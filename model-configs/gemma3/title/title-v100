@@ -16,7 +16,7 @@ Ingest a single image file from input, analyse it internally, and generate 10 su
 
 1. Length Limit
   - Never exceed 120 characters, including spaces and punctuation.
-  - TITLE must be not lesss than 70 characters. Ideally, TITLE is 100 characters.
+  - The TITLE must be at least 70 characters long.
   - Any TITLE shorter than 70 characters is invalid and must be regenerated.
   - If TITLE < 70 chars, add more visible attributes — NOT invented context.
  
@@ -67,7 +67,7 @@ Ingest a single image file from input, analyse it internally, and generate 10 su
   - If a structure is partially visible and ambiguous, describe only what is unmistakably clear (e.g., “path with railing”) — NOT its destination.
   - Mention only colors that are visually dominant and unmistakable. Avoid naming colors of materials reflecting ambient light.
   - If the subject resembles multiple possible cultural artifacts, use neutral descriptive terms (“decorative ceramic emblem”, “ornamental ceramic face detail”) and NEVER assign cultural categories (Venetian, carnival, mythological, theatrical) unless unmistakable.
-  - Absolutely No Cultural or Geographic Classification Without Certainty. Never classify the subject as below, unless the image contains explicit, globally recognizable symbols. If uncertain - user neutral terms. 
+  - Absolutely No Cultural or Geographic Classification Without Certainty. Never classify the subject as below, unless the image contains explicit, globally recognizable symbols. If uncertain, use neutral terms. 
     - Venetian
     - Carnival
     - Christmas
@@ -86,7 +86,6 @@ Ingest a single image file from input, analyse it internally, and generate 10 su
     - countertops
     - studios
     - stone pillars
-unless 100% clearly visible.
   - No Actions Unless Frozen in Frame. Unless visibly happening, never describe:
     - jumping.
     - playing.
@@ -104,34 +103,34 @@ The dominant subject is the main meaningful element of the image. Determine this
 Priority A — Meaningful, concrete subjects
 
 Always treat these as dominant even if they occupy less pixel area:
-	•	people, figurines, animals
-	•	boats, vehicles, buildings, architectural elements
-	•	flowers, fruits, food
-	•	identifiable objects with clear shape and purpose
+  - people, figurines, animals
+  - boats, vehicles, buildings, architectural elements
+  - flowers, fruits, food
+  - identifiable objects with clear shape and purpose
 
 A small cat / figurine / boat / croissant still beats a huge sky or wall.
 
 Priority B — If no concrete subject exists
 
 Then choose from:
-	•	landscapes
-	•	seascapes
-	•	sky
-	•	patterns
-	•	textures
-	•	architectural backgrounds
+  - landscapes
+  - seascapes
+  - sky
+  - patterns
+  - textures
+  - architectural backgrounds
 
 Clarification
-	•	A large background (sky, water, stone wall) must NOT override a smaller subject if the smaller subject is clearly intentional or meaningful.
-	•	Visual dominance = semantic importance + viewer focus, not pixel count alone.
-	•	Use common sense: “what would a human viewer consider the subject?”
+  - A large background (sky, water, stone wall) must NOT override a smaller subject if the smaller subject is clearly intentional or meaningful.
+  - Visual dominance = semantic importance + viewer focus, not pixel count alone.
+  - Use common sense: “what would a human viewer consider the subject?”
 
 Examples
-	•	A cat lying in a small corner of the frame → cat is dominant.
-	•	A boat on wide open water → boat is dominant.
-	•	A figurine in a nativity scene → figurine, not “wooden beams”.
-	•	A sunset sky with no subject → sky is dominant.
-	•	A pure textile macro with no objects → texture is dominant.
+  - A cat lying in a small corner of the frame → cat is dominant.
+  - A boat on wide open water → boat is dominant.
+  - A figurine in a nativity scene → figurine, not “wooden beams”.
+  - A sunset sky with no subject → sky is dominant.
+  - A pure textile macro with no objects → texture is dominant.
 
 2. Start the TITLE with the main subject OR with a clear surrounding containing that subject.
   - Example subject-first:
