@@ -27,10 +27,8 @@ The dominant subject is what a human viewer would focus on first, NOT necessaril
   - Output exactly ONE description.
   - The description must be a single sentence, or at most three short sentences.
   - Target length: between 120 and 200 characters (including spaces).
-  - Description must not be longer than 200 characters.
-  - If description is longer than 200 characters, then regenerate the description to be under 200 characters.
- - The description must not be shorter than 120 characters. If shorter, regenerate to reach at least 120 characters.
- - If shorter than 120 characters OR longer than 200 characters, regenerate until the length is valid.
+  - The description must not be shorter than 120 characters and must not be longer than 200 characters.
+  - If the description is shorter than 120 characters OR longer than 200 characters, regenerate until the length is valid.
   - Must be plain English prose. NOT a keyword list, NOT a title.
 
 2. Content and realism
@@ -65,14 +63,14 @@ The dominant subject is what a human viewer would focus on first, NOT necessaril
   – If unsure, describe only what is certain.
 
   Forbidden unless explicit in the image:
-    - Emotions, relationships, personalities, backstory.
-    - Ages, professions, nationalities, or social roles.
-    - Geographic locations, cities, countries, landmarks.
-    - Holidays, celebrations, weddings, travel themes.
-    - Symbolic or conceptual meanings (“freedom”, “stress”, “success”).
-    - Specific indoor settings (kitchen, office, studio, bedroom) unless unmistakable.
-    - Weather/season (summer, winter, spring, autumn) unless clearly depicted.
-    - Any brand names, logos, or text that are not clearly legible in the image.
+  - Emotions, relationships, personalities, backstory. 
+  - Ages, professions, nationalities, or social roles.
+  - Geographic locations, cities, countries, landmarks.
+  - Holidays, celebrations, weddings, travel themes.
+  - Symbolic or conceptual meanings (“freedom”, “stress”, “success”).
+  - Specific indoor settings (kitchen, office, studio, bedroom) unless unmistakable.
+  - Weather/season (summer, winter, spring, autumn) unless clearly depicted.
+  - Any brand names, logos, or text that are not clearly legible in the image.
 
   If you are uncertain, keep the description more general and factual.
 
@@ -82,11 +80,11 @@ The dominant subject is what a human viewer would focus on first, NOT necessaril
   - If you cannot confidently determine whether the scene is indoors or outdoors, do NOT guess.
   - If faces are not clearly visible, do NOT describe expressions, emotions, or gaze direction.
   - You MUST NOT describe mannequins, dolls, figurines, statues, or sculpted figures as people.
-  If faces or bodies appear artificial, stiff, jointed, or stylized, classify them as decorative figures, not humans.
+  - If faces or bodies appear artificial, stiff, jointed, or stylized, classify them as decorative figures, not humans.
   - NEVER describe a mannequin as “a person,” “a woman,” “a man,” “a child,” or “someone.”
   - If a figure has a human face but appears carved, painted, or stylized, describe it as "a decorative figure" or "a crafted figure."
   - If a linear shape near water could be sand or a path, do not describe it as a road unless lane markings, asphalt texture, or barriers are clearly visible.
-  - Do not use the word ‘mannequin’ unless the figure is life-sized and unmistakably a commercial display mannequin, it may be a figurine, doll, or a crafted figure then.
+  - Do not use the word “mannequin” unless the figure is life-sized and unmistakably a commercial display mannequin. Otherwise treat it as a figurine, doll, or crafted figure.
   - Do not classify distant buildings by type (e.g., fort, church, tower) unless architectural features are unmistakable.
   
   
@@ -129,6 +127,7 @@ Each example:
 
   - Put the description into a string in a minified JSON array.
   - The output array must contain exactly ONE string with the description.
+  - Do not include any extra spaces, newlines, keys, or comments outside the JSON array.
   - Example of the output JSON Array:
 
 ["A detailed description of the visible scene here, written as natural English prose and strictly limited to what can be clearly seen in the image."]
